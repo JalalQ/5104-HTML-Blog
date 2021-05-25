@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <!-- Except for the title, the content of the head is not visible to users when they visit your page. -->
+        <meta charset="utf-8">
+        <title>Blog Post - Eating Healthy</title>
+        <meta name="description" content="Blog page on Eating Healthy Food" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" >
+    </head>
+    
+    <body>
+        <header id="header">
+            <div class="page-container" role="navigation">
+                <h2 id="site-name"><a href="#">Blog - Healthy Eating Habits</a></h2>
+                <nav>
+                    <!-- Added for improved accesssibility, it is hidden from the view of the vsisitor -->
+                    <h3 id="hidden">Main navigation</h3> 
+                    <ul id="menu-link">
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Receipes</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Milk and Dairy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="page-container" role="main">
+            <main id="main">
+                <!-- If there are more than one blog in the page add the <article> layout tage -->
+
+                <h1 id="page-title">Healthy Eating Habits</h1>
+                <p>
+                    A <strong>balanced diet</strong> which follows the daily recommended energy and nutrient intake range is desirable for chronic disease prevention and management. In the landscape of healthy eating there are many beliefs and dogmas, from vegan, Paleo, Mediterraneon, and raw food. For generations we have consumed varied diets native to all sorts of environments from all over the planet earth, from the arid Sahara desert to the Alp mountain of Europe which are covered in snow for most part of the year. Unfortunately much of what we eat today is not food in the traditional sense, as most of the food items we consume today is proocessed food often with artificial additives added in it such as preservative, color or for taste enhancement. In this blog I will briefly provide my recommendations on healthy eating habits, what kind of food should be eaten, in what quantities and which food should be avoided.
+                </p>
+                <h2>Eating meat for your daily protein requirement</h2>
+                <p>
+                    It is well know that humans have domesticated sheep, cows and goats as far back as 10,000 BC. Humans have been eating <em>meat</em> for about as long as our species has existed. While <em>protein</em> may exist in virtually every food product, meat products have a relatively higher amount of protein. For example eating 100 grams of fish can provide approximately 20-30 grams of protein. The daily protein intake requirement for an adult can vary anywhere between 60 to 90 grams. Apart from providing protein, animal food are our only source of vitamin B12, which is essential for life itself. If you would like to read more about the effects of having meat in your diet, then I would recommend you to read <a href="https://www.nhs.uk/live-well/eat-well/meat-nutrition/" title="NHS UK article on the health effect of eating meat products">this article</a> published by the United Kingdom National Health Service.
+                </p>
+                <!-- This image has been taken from this website http://www.bearnakedfood.com/2015/09/04/balinese-ikan-bakar/ -->
+                <img src="image/fish.jpg" alt="Cooked Fish - Healthy source of protein" title="Healthy source of Protein"/>
+                <h2>Vegetables and Fruits</h2>
+                <p>
+                    Eat locally grown <em>organic fruis</em> and <em>vegetables</em>. By growing vegetables and fruits organically helps eliminate water, air, andd soil toxicity and promotes biodiversity. The best way to find fresh local food is to grow it yourself! Be careful as many of the veggies consumed in America and Canada are genetically modified. Dont deep-fry your vegetables such as potatoes, instead it is better to bake them. One should eat at least seven to nine servings of fruits and vegetable daily. Scientific research has shown that eating a wide variety of food in our diet can lower the chances of stroke and breast cancer. The <a href="https://www.webmd.com/diabetes/guide/glycemic-index-good-versus-bad-carbs" title="glycemic index (GI)">glycemic index (GI)</a> is a scale which measures how much a particular food raises your blood sugar level - this model was first developed by scientist at Harvard University in <time datetime=1997>1997</time>. It is recommended to eat fruits with GI less than 11. Examples of such fruits include cherries and oranges. The <a href="https://www.organiccouncil.ca/" title="Information about advocacy of Organic Food in Ontario">Organic Council of Onatario</a> is a an organization which aims to maintain integrity of organics products in Ontario. 
+                </p>
+
+                <!-- This image has been taken from this website https://www.eatthis.com/fruits-veggies-that-fill-you-up/ -->
+                <img src="image/fruits.jpg" alt="Fruits and Vegetables" title="Eat a varity of fruits and vegetables"/>
+
+                <section>
+                    <h2>Recommended Books</h2>
+                    <p>For those of you who would like to read more about this topic, the following are some of the useful recommended books on this subject:</p>
+                    <ul>
+                        <li>Hyman, M., 2018. <em>Food: What the Heck Should I Eat?.</em> Hachette UK.</li>
+                        <li>Willett, W. and Skerrett, P.J., 2017. <em>Eat, drink, and be healthy: the Harvard Medical School guide to healthy eating.</em> Simon and Schuster.</li>
+                    </ul>
+                </section>
+
+                <!-- The name attribute tell the browswer which name to give each piece of data
+                and, on the server side, they let the server handle each piece of data by name.-->
+
+                <!-- For various input types option,
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-placeholder -->
+
+                <!-- FORMS https://developer.mozilla.org/en-US/docs/Learn/Forms -->
+                <h2>Comments</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name" >Name: </label>
+                        <input type="text" id="name" name="user_name" placeholder="Enter your name here" value="">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="user_email" placeholder="email@domain." value="">
+                    </div>
+                    <div>
+                        <label for="comment">Comment: </label>
+                    </div>
+                    <div id="comment-size">
+                        <textarea id="comment" name="user_comment" placeholder="Enter your feedback here"></textarea> 
+                    </div>
+                    <button type="submit" id="submit" name="submit">Submit</button>
+                </form>
+            </main>
+
+            <aside id="sidebar">
+                <section>
+                    <h2>Eating Right Amount of Nuts</h2>
+                    <p>Eating too much nuts can increase fat level, while eating too little means that you are not getting enough of the healthy fat needed for your heart and brain. It is therefore recommended to eat 1-2 ounce of nuts per day.</p>
+                </section>
+                <section>
+                    <h2>Farm-Fish vs Wild Caught Fish</h2>
+                    <p>Eating Farm fish may be good for health, but do make sure that the fishes have not been fed with antibiotics. Wild fishes may have contamination of pollutants such as mercury.</p>
+                </section>
+                <footer>
+                    <!-- <nav> is not used here, as it is not a major navigational section -->
+                    <h2>Related Blogs</h2>
+                    <ul class="menu-list">
+                        <li><a href="#">Food for your Brain</a></li>
+                        <li><a href="#">Kitchen Spices for your Inflammation</a></li>
+                        <li><a href="#">Detox your liver</a></li>
+                    </ul>
+                </footer>
+            </aside>
+            
+            <footer id="footer">
+                <div>All Rights Reserved &copy;. For further information contact us at <a href="mailto:info@food.ca">info@food.ca</a>.</div>
+                <div>Read more about our <a href="">Privacy Policy.</a></div>
+            </footer>
+
+        </div>
+        
+    </body>
+
+</html>

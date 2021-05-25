@@ -1,0 +1,179 @@
+/******************************************************
+* TABLE OF CONTENTS
+* ===================
+* 1. html
+* 2. box-sizing property
+* 3. Rendering HTML5 elements for older browsers
+* 4. body
+* 5. h1, h2, h3
+* 6. a (and a:___)
+* 7. img
+* 8. site-name
+* 9. site-name a
+* 10. menu-link
+* 11. menu-list
+* 12. header
+* 13. hidden
+* 14. main
+* 15. sidebar
+* 16. comment
+* 17. page-container
+* 18. form
+* 19. footer
+******************************************************/
+
+
+html {
+    box-sizing:border-box;
+    font-size: 1em;
+}
+
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+/* Set default rendering of certain HTML5 elements for older browsers. 
+Taken from the book, Visual QuickStart Guide HTML and CSS, Eighth Edition*/
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: Helvetica, Arial, "Times New Roman";
+    background-color: honeydew;
+    font-size: 1.1em;
+    line-height: 1.25em;
+    margin:0;
+}
+
+h1, h2, h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+a {
+    color: blue;   
+}
+a:visited {
+    color:darkblue;
+}
+a:hover {
+    color:crimson;
+}
+a:active {
+    color:orange;
+}
+
+/* img is an in-line element by default, changes it into a block level elements, and
+then auto sets its left-right margin so that the image can be centered */
+img {
+    display: block;
+    margin:0 auto;
+    width:85%;
+}
+
+#site-name {
+    padding:0 1%;
+    margin:0 1%;
+}
+
+/* to remove th underline from the site name */
+#site-name a, #site-name a:link{
+    text-decoration: none;
+}
+
+/* Menu link is used in the main navigation bar */
+#menu-link {
+    padding:1em 1%;
+    margin:0 1%;
+}
+
+#menu-link li {
+    display:inline-block;
+    list-style-type:none;
+    margin-right:3em;
+}
+
+#menu-link li:last-child {
+    margin:0;
+}
+
+/* Used in the footer of the sidebar */
+.menu-list {
+    padding:0;
+    margin:0 0 1em 0;
+    
+}
+
+.menu-list li {
+    display:inline-block;
+    list-style-type:none;
+    margin-bottom: 0.5em;
+}
+
+#header {
+    background-color:#eae01752; /*Variant of Green color to relate with organic healty eating */
+    border:1px dashed blue;
+    border-bottom:1px solid #000; /* #000 is another way to write "black" */
+    padding:1em;
+    margin-bottom:1em;
+}
+
+/* To hide some content, which has been added for the sake of accessibility */
+#hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+/* To have main and sidebar placed side by side float the sidebars left/ right and then make the main container display as an inline-block*/
+#main {
+    width:65%; 
+    display:inline-block;
+    background-color:#b2e6434a;
+    border: 1px solid  green;
+    padding:0 1%;
+    margin:0 1%;
+}
+
+
+#sidebar {
+    width:33%;
+    float:right;
+    background-color:#f7da2d45;
+    border: 1px solid  green;
+    padding:0 1em;
+    margin:0;
+}
+
+#comment {
+    width:85%;
+    height:10em;
+}
+
+
+/* limits the size of the window to be <= 1200 pxs.*/
+.page-container {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* to create vertical space after the submit button */
+form {
+    margin-bottom: 1em;
+}
+
+#footer {
+    border:2px double gainsboro;
+    clear:both;
+    background-color:silver;
+    margin: 1em 1%;
+    padding:0 1%;
+}
+
