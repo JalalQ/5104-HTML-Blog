@@ -1,2 +1,3 @@
-# 5104-HTML-Blog
-Design of a blog page using HTML and CSS
+# Introduction
+
+In this project, I designed and developed a multi-column blog page using HTML and CSS, keeping into consideration the semantic meaning of HTML elements used.
